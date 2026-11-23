@@ -1,0 +1,51 @@
+/* Update the import to Space Grotesk */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #0d1117;
+  --panel-bg: #161b22;
+  --text-main: #e6edf3;
+  --text-muted: #8b949e;
+  --accent: #2ea043;
+  --accent-hover: #3fb950;
+  --border: #30363d;
+  --font-family: "Space Grotesk", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 600px) {
+  /* Hide the right-hand header text on phones */
+  .header-subtitle {
+    display: none !important;
+  }
+  
+  /* Ensure the main container doesn't overflow */
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Force Plotly to use the new font */
+.js-plotly-plot .plotly, .js-plotly-plot .plotly text {
+  font-family: var(--font-family) !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-color); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
