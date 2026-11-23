@@ -143,7 +143,7 @@ export default function PathwayPlot({ data }) {
       style={{
         display: "grid",
         // THIS IS THE MAGIC FIX FOR MOBILE: minmax(100%, 1fr) instead of 600px
-        gridTemplateColumns: "repeat(auto-fit, minmax(100%, 1fr))", 
+        gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 600px), 1fr))",
         gap: "16px",
         alignItems: "start",
       }}

@@ -95,7 +95,7 @@ function App() {
                 onClick={() => setData(null)}
                 style={{
                   background: "transparent", color: "var(--text-main)", border: "1px solid var(--border)",
-                  padding: "8px 16px", borderRadius: "6px", cursor: "pointer", fontSize: "14px", width: "100%"
+                  padding: "8px 16px", borderRadius: "6px", cursor: "pointer", fontSize: "14px"
                 }}
               >
                 Upload New File
