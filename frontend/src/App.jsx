@@ -18,7 +18,7 @@ function App() {
 
     try {
       // Make sure this is your live Render URL when deploying!
-      const res = await fetch("http://localhost:8000/api/upload", {
+      const res = await fetch("https://picrust2-explorer.onrender.com/api/upload", {
         method: "POST",
         body: formData,
       });
